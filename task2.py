@@ -15,3 +15,17 @@
 * in which your solution might not work.
 ===================================================
 """
+def main():
+    number = input("Enter a number:")
+    even = 0
+    odd = 0
+    for i in range(0,len(number)):
+        if int(number[i]) % 2 == 0 :
+            even += 1
+        else:
+            odd += 1
+
+    print("There is ",even," even numbers,and ",odd," odd numbers")
+
+main()
+

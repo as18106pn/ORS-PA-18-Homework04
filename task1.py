@@ -13,3 +13,18 @@
 * Use main() function to test your solution.
 ===================================================
 """
+def sum_digits(number):
+    num_str = str(number)
+    sum = 0
+    for i in range(0, len(num_str)):
+        sum += int(num_str[i])
+    return sum
+
+
+def main():
+
+    int_number = 1234
+    digit_sum = sum_digits(int_number)
+    print("Sum of digits for given numbers is: ", digit_sum)
+
+main()
